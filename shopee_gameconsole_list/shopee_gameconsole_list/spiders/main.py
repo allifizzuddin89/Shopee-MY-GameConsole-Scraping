@@ -33,7 +33,7 @@ class MainSpider(scrapy.Spider):
     # Scraping for game console list in Shopee MY
 
     url = 'https://shopee.com.my/api/v4/recommend/recommend?bundle=category_landing_page&cat_level=1&catid=11001085&limit=60&offset={}'
-
+    
     headers = {
         "authority": "shopee.com.my",
         "accept": "*/*",
@@ -79,34 +79,34 @@ class MainSpider(scrapy.Spider):
     def start_requests(self):
         # Comment below if using proxy
 
-        url = 'https://shopee.com.my/api/v4/recommend/recommend?bundle=category_landing_page&cat_level=1&catid=11001085&limit=60&offset=0'
-        request = Request(
-        url=url,
-        method='GET',
-        dont_filter=True,
-        headers=self.headers,
-        cookies=self.cookies
-        # callback=self.parse
-        )
-        yield request
+        # url = 'https://shopee.com.my/api/v4/recommend/recommend?bundle=category_landing_page&cat_level=1&catid=11001085&limit=60&offset=0'
+        # request = Request(
+        # url=url,
+        # method='GET',
+        # dont_filter=True,
+        # headers=self.headers,
+        # cookies=self.cookies
+        # # callback=self.parse
+        # )
+        # yield request
 
-        # for i in range(0,481):
-        #     request = Request(
-        #     url=self.url.format(i),
-        #     method='GET',
-        #     dont_filter=True,
-        #     headers=self.headers,
-        #     cookies=self.cookies
-        #     # callback=self.parse
-        #     )
-        #     print('\n')
-        #     print('i')
-        #     print('\n')
-        #     i+=60
-        #     yield request
+        for i in range(0,481,60):
+            request = Request(
+            url=self.url.format(i),
+            method='GET',
+            dont_filter=True,
+            headers=self.headers,
+            cookies=self.cookies,
+            # callback=self.parse,
+            )
+            print('\n')
+            print(i)
+            print('\n')
+            # i=i+60
+            yield request
         # Uncomment below if using proxy
         # for i in range(1,61):
-        #     yield scrapy.Request(client.scrapyGet(url=self.url.format(i), headers=self.headers), dont_filter=True)
+            # yield scrapy.Request(client.scrapyGet(url=self.url.format(i), headers=self.headers), dont_filter=True)
 
     def parse(self, response):
         # Load json
