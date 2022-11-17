@@ -1,0 +1,43 @@
+https://shopee.com.my/api/v4/recommend/recommend?bundle=category_landing_page&cat_level=1&catid=11001085&limit=60&offset=0
+
+curl 'https://shopee.com.my/api/v4/recommend/recommend?bundle=category_landing_page&cat_level=1&catid=11001085&limit=60&offset=0' \
+  -H 'authority: shopee.com.my' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9,ms;q=0.8,id;q=0.7' \
+  -H 'cache-control: no-cache' \
+  -H 'cookie: __LOCALE__null=MY; SPC_F=4yyr34qq4wkEtFKE27R94tgqsNmVmnnq; REC_T_ID=9f294993-0cc6-11ed-8673-2cea7fac73f8; csrftoken=nRBsmNywRWNAZgiei8oVB4xQwekE9Omg; _QPWSDCXHZQA=2ced2645-2481-4b1f-d766-dcd4b322c478; language=en; G_ENABLED_IDPS=google; SPC_CLIENTID=NHl5cjM0cXE0d2tFeffyooousrejdajx; SPC_U=-; SPC_EC=-; SPC_IA=-1; SPC_T_ID="yjf6vJdvbU3Bv/hF5exVuEkBiLWhaJIVstqrsTqWc9XJX95VcI+N6MmEgk2wqCrnQZxzjajrLuwJsd9S6wbAnFhKD10FxfEkz+Ig0oKoRT4="; SPC_T_IV="/KtcL1So3DLzbIrubiEcJQ=="; SPC_T_ID=yjf6vJdvbU3Bv/hF5exVuEkBiLWhaJIVstqrsTqWc9XJX95VcI+N6MmEgk2wqCrnQZxzjajrLuwJsd9S6wbAnFhKD10FxfEkz+Ig0oKoRT4=; SPC_T_IV=/KtcL1So3DLzbIrubiEcJQ==; SPC_R_T_ID=yjf6vJdvbU3Bv/hF5exVuEkBiLWhaJIVstqrsTqWc9XJX95VcI+N6MmEgk2wqCrnQZxzjajrLuwJsd9S6wbAnFhKD10FxfEkz+Ig0oKoRT4=; SPC_R_T_IV=/KtcL1So3DLzbIrubiEcJQ==; SPC_SI=lr1sYwAAAAB6S0F3SENpMUyamAAAAAAAY3llTHY0MnU=; shopee_webUnique_ccd=uBeydK%2BHx1X0EFo6Ey%2FESw%3D%3D%7CwReKgl%2BzrwaHNae%2FFwFtNjYrgOH7x0%2B5QxLub51Yh8yRct4U9QmOhrukyCbgD%2Bkpe8ueGbXXT%2BBS3%2FGfcOUiGX0JCYEZ8tWEQuY4%7C1K8Lorz7W75cgk5m%7C06%7C3; ds=347008a18c18952762149899d359d9eb' \
+  -H 'dnt: 1' \
+  -H 'if-none-match-: 55b03-35710a471c4d1149d44cfd8efa937505' \
+  -H 'pragma: no-cache' \
+  -H 'referer: https://shopee.com.my/Gaming-Consoles-cat.11001085?page=0&sortBy=pop' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42' \
+  -H 'x-api-source: pc' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  -H 'x-shopee-language: en' \
+  --compressed
+
+#### PATH
+data.sections[0].data.item[0].historical_sold
+data.sections[0].data.item[0].item_rating.rating_star
+data.sections[0].data.item[0].liked_count
+data.sections[0].data.item[0].name
+data.sections[0].data.item[0].price_max
+data.sections[0].data.item[0].price_min
+data.sections[0].data.item[0].shop_name
+data.sections[0].data.item[0].stock
+
+#### Link
+('a[data-sqe]::attr(href)').get()
+
+#### Pagination
+https://shopee.com.my/Gaming-Consoles-cat.11001085?page=0&sortBy=pop
+
+# Offset by 60 max 480, min 0
+https://shopee.com.my/api/v4/recommend/recommend?bundle=category_landing_page&cat_level=1&catid=11001085&limit=60&offset=0
+
