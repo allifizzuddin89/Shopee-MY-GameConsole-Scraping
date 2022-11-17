@@ -1,6 +1,7 @@
+import json
 import scrapy
 from scrapy import Request
-import json
+
 
 # Using proxy if unsuccessful and errors
 # Register here at https://www.scraperapi.com/?fp_ref=allif-izzuddin-bin-abdullah73
@@ -14,17 +15,6 @@ import json
 # from scraper_api import ScraperAPIClient
 # client = ScraperAPIClient(API)
 
-# Logging
-import logging
-from scrapy.utils.log import configure_logging
-logging.getLogger('__main__').setLevel(logging.DEBUG)
-configure_logging(install_root_handler = False) 
-logging.basicConfig(
-    filename="logfile.txt", 
-    format='%(asctime)s - %(levelname)s - %(message)s', 
-    filemode='w',
-    level = logging.ERROR,
-)
 class MainSpider(scrapy.Spider):
     name = 'main'
     # allowed_domains = ['x']
@@ -97,7 +87,7 @@ class MainSpider(scrapy.Spider):
             dont_filter=True,
             headers=self.headers,
             cookies=self.cookies,
-            # callback=self.parse,
+            callback=self.parse,
             )
             print('\n')
             print(i)
