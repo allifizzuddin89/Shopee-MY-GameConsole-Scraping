@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 shopee_api
+shopee_gameconsole_list/shopee_gameconsole_list/spiders/.~lock.Shopee_console_list.csv#
