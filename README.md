@@ -31,7 +31,7 @@
 - Solution: 1. Refresh the cookies OR
             2. Using proxy (refer main.py)
   
-  ## DISCLAIMER
+## DISCLAIMER
 - This work only meant for educational, research and proof of work purpose only. 
 - I will not responsible for any illegal activities.
 - Every action is on your own responsibilities.
