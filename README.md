@@ -24,7 +24,7 @@
  - git clone https://github.com/allifizzuddin89/Shopee-MY-GameConsole-Scraping.git
  - conda create --name scraping_env -c conda-forge python=3.10.8 scrapy=2.7.1
  - conda activate scraping_env
- - scrapy runspider Shopee-MY-GameConsole-Scraping.shopee_gameconsole_list.shopee_gameconsole_list.spiders.main.py
+ - scrapy runspider Shopee-MY-GameConsole-Scraping.shopee_gameconsole_list.shopee_gameconsole_list.spiders.main.py --O shopee_game.csv
 
 ## Troubleshoot
 - Error might happened due to the cookies already expired or request being rejected by the server.
