@@ -1,5 +1,5 @@
 # Shopee-MY-GameConsole-Scraping
-- Scraping game console price and type from Shopee MY via API
+- Scraping game console price and type from Shopee MY via API in shopee.com.my
 - Web scraping via API request using Scrapy web scraping framework
 - Scraping framework : Scrapy
 - Scraping through API, extracting data from JSON
