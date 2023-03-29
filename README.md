@@ -5,7 +5,7 @@
 - Scraping through API, extracting data from JSON
 
 ## Result
-- Please the generated scraped data in [result](https://github.com/allifizzuddin89/Lazada-Web-Scraping-Handphone-Price-List/blob/main/lazada_phone_listing/lazada_phone_listing/spiders/lazada_list.csv)
+- Please the generated scraped data in [result](https://github.com/allifizzuddin89/Shopee-MY-GameConsole-Scraping/blob/main/shopee_gameconsole_list/shopee_gameconsole_list/spiders/Shopee_MY_gameconsole.csv)
 
 ## Requirement : 
 - Scrapy 2.7.1
